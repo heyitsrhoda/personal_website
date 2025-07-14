@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Involvement = () => {
@@ -10,11 +9,10 @@ const Involvement = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-6 shadow-lg border border-gray-200">
             <div className="relative h-48 mb-4">
-              <Image
-                src="/images/paychex-logo.png"
+              <img
+                src="/images/Paychex(1).png"
                 alt="Paychex Logo"
-                fill
-                className="object-contain"
+                className="object-contain w-full h-full"
               />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Paychex</h3>
@@ -32,11 +30,10 @@ const Involvement = () => {
           </div>
           <div className="bg-white p-6 shadow-lg border border-gray-200">
             <div className="relative h-48 mb-4">
-              <Image
-                src="/images/temple-of-understanding.png"
+              <img
+                src="/images/TOU(1).jpeg"
                 alt="Temple of Understanding"
-                fill
-                className="object-contain"
+                className="object-contain w-full h-full"
               />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Temple of Understanding</h3>

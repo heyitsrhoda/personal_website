@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
 import { Playfair_Display } from 'next/font/google';
 
@@ -9,12 +8,10 @@ export default function Home() {
     <div className="min-h-screen text-white scroll-smooth font-serif relative">
       {/* Background Image using images.jpeg */}
       <div className="fixed inset-0 w-full h-full">
-        <Image
+        <img
           src="/images/images.jpeg"
           alt="Background"
-          fill
-          className="object-cover object-center"
-          priority
+          className="object-cover object-center w-full h-full"
         />
         {/* Dark overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/70"></div>
@@ -72,12 +69,10 @@ export default function Home() {
               </div>
             </div>
             <div className="relative w-[280px] h-[280px] mx-auto md:mx-0 group">
-              <Image
+              <img
                 src="/images/Rhoda.jpg"
                 alt="Rhoda Roby"
-                fill
-                className="object-cover object-[center_10%] transition-transform duration-300 group-hover:scale-105"
-                priority
+                className="object-cover object-[center_10%] transition-transform duration-300 group-hover:scale-105 w-full h-full"
               />
             </div>
           </div>
@@ -120,23 +115,17 @@ export default function Home() {
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20">
                 <div className="flex flex-col">
                   <div className="relative h-[250px] w-full overflow-hidden mb-4 border-2 border-[#FFD700]/60">
-                    <Image
+                    <img
                       src="/images/UN(1).jpg"
                       alt="Model United Nations"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover object-center w-full h-full opacity-80"
-                      priority
                     />
                   </div>
                   <div className="relative h-[250px] w-full overflow-hidden border-2 border-[#FFD700]/60">
-                    <Image
+                    <img
                       src="/images/UN(2).jpeg"
                       alt="Model United Nations"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover object-[center_30%] w-full h-full opacity-80 scale-110"
-                      priority
                     />
                   </div>
                   <div className="p-6">
@@ -152,23 +141,17 @@ export default function Home() {
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20">
                 <div className="flex flex-col">
                   <div className="relative h-[250px] w-full overflow-hidden mb-4 border-2 border-[#FFD700]/60">
-                    <Image
+                    <img
                       src="/images/AEI(1).JPG"
                       alt="American Enterprise Institute"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover object-center w-full h-full scale-130"
-                      priority
                     />
                   </div>
                   <div className="relative h-[250px] w-full overflow-hidden border-2 border-[#FFD700]/60">
-                    <Image
+                    <img
                       src="/images/aei.jpg"
                       alt="American Enterprise Institute"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover object-center w-full h-full"
-                      priority
                     />
                   </div>
                   <div className="p-6">
@@ -184,23 +167,17 @@ export default function Home() {
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20">
                 <div className="flex flex-col">
                   <div className="relative h-[250px] w-full overflow-hidden mb-4 border-2 border-[#FFD700]/60">
-                    <Image
+                    <img
                       src="/images/classcouncil(2).jpg"
                       alt="Class Council"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover object-center w-full h-full"
-                      priority
                     />
                   </div>
                   <div className="relative h-[250px] w-full overflow-hidden border-2 border-[#FFD700]/60">
-                    <Image
+                    <img
                       src="/images/Classcouncil(3).png"
                       alt="Class Council"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover object-[center_30%] w-full h-full scale-110"
-                      priority
                     />
                   </div>
                   <div className="p-6">
@@ -224,11 +201,10 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="relative h-[250px] flex items-center justify-start p-4">
                     <div className="relative w-full h-full">
-                      <Image
+                      <img
                         src="/images/Paychex(1).png"
                         alt="Paychex"
-                        fill
-                        className="object-contain"
+                        className="object-contain w-full h-full"
                       />
                     </div>
                   </div>
@@ -246,217 +222,104 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="flex flex-col">
                     <div className="relative h-[250px] w-full overflow-hidden mb-4">
-                      <Image
+                      <img
                         src="/images/IT(1).png"
                         alt="IT Support"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover object-center w-full h-full"
-                        priority
                       />
                     </div>
                     <div className="relative h-[250px] w-full overflow-hidden">
-                      <Image
+                      <img
                         src="/images/IT(2).png"
                         alt="IT Support"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover object-[center_30%] w-full h-full scale-110"
-                        priority
                       />
                     </div>
                   </div>
                   <div className="p-6 flex flex-col justify-center">
                     <h3 className="text-xl font-bold mb-4 text-white">IT Support Specialist</h3>
                     <p className="text-lg text-gray-300 leading-relaxed">
-                      Rhoda demonstrated exceptional technical expertise and customer service skills while providing comprehensive IT support to the university community. She successfully resolved diverse IT-related issues through systematic problem-solving and effective team collaboration. She implemented innovative solutions to enhance system efficiency and user experience, while maintaining detailed documentation of technical procedures and user interactions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Temple of Understanding - Centered image */}
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="relative h-[250px] flex items-center justify-start p-4">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src="/images/TOU(1).jpeg"
-                        alt="Temple of Understanding"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-6 flex flex-col justify-center">
-                    <h3 className="text-xl font-bold mb-4 text-white">Temple of Understanding</h3>
-                    <p className="text-lg text-gray-300 leading-relaxed">
-                      Rhoda was selected for a prestigious internship at the Temple of Understanding, an interfaith non-governmental organization with consultative status at the United Nations. She engaged with global issues and NGO operations through daily UN participation and high-level meetings. She contributed to interfaith dialogue initiatives and peace-building efforts, while developing a deep understanding of international relations and diplomatic processes.
+                      Rhoda provided technical support and troubleshooting for hardware and software issues, ensuring smooth operation of computer systems and networks. She assisted users with software installations, system configurations, and network connectivity problems, while maintaining detailed documentation of solutions and procedures.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-        </div>
 
-        <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
+          <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
 
-        <section id="skills" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-          <h2 className="text-3xl mb-12 text-center text-white">Skills</h2>
-          <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md p-8 transition-all duration-300 hover:shadow-xl border border-[#FFD700]/20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div>
-                <h3 className="text-xl font-bold mb-6 text-white">Technical Skills</h3>
-                <div className="space-y-4">
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Python</span>
-                      <span className="text-gray-300">Advanced</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '90%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Java</span>
-                      <span className="text-gray-300">Intermediate</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '75%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">JavaScript/React</span>
-                      <span className="text-gray-300">Intermediate</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '70%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">SQL</span>
-                      <span className="text-gray-300">Intermediate</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '65%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Git</span>
-                      <span className="text-gray-300">Intermediate</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '75%' }}></div>
-                    </div>
-                  </div>
-                </div>
+          <section id="skills" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+            <h2 className="text-3xl mb-12 text-center text-white">Skills</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20">
+                <h3 className="text-xl font-bold mb-4 text-white">Programming Languages</h3>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• Python</li>
+                  <li>• Java</li>
+                  <li>• JavaScript</li>
+                  <li>• HTML/CSS</li>
+                  <li>• SQL</li>
+                </ul>
               </div>
-              <div>
-                <h3 className="text-xl font-bold mb-6 text-white">Soft Skills</h3>
-                <div className="space-y-4">
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Leadership</span>
-                      <span className="text-gray-300">Advanced</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '90%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Public Speaking</span>
-                      <span className="text-gray-300">Advanced</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '85%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Cross-Cultural Communication</span>
-                      <span className="text-gray-300">Advanced</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '95%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Problem Solving</span>
-                      <span className="text-gray-300">Advanced</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '85%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-white">Project Management</span>
-                      <span className="text-gray-300">Intermediate</span>
-                    </div>
-                    <div className="w-full bg-gray-700/30 rounded-full h-2">
-                      <div className="bg-[#FFD700]/60 h-2 rounded-full" style={{ width: '70%' }}></div>
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20">
+                <h3 className="text-xl font-bold mb-4 text-white">Technologies</h3>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• React.js</li>
+                  <li>• Next.js</li>
+                  <li>• Node.js</li>
+                  <li>• Git</li>
+                  <li>• Docker</li>
+                </ul>
+              </div>
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20">
+                <h3 className="text-xl font-bold mb-4 text-white">Soft Skills</h3>
+                <ul className="space-y-2 text-gray-300">
+                  <li>• Leadership</li>
+                  <li>• Public Speaking</li>
+                  <li>• Problem Solving</li>
+                  <li>• Team Collaboration</li>
+                  <li>• Cross-cultural Communication</li>
+                </ul>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
+          <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
 
-        <section id="contact" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-          <h2 className="text-3xl mb-6 text-center text-white">Contact</h2>
-          <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 backdrop-blur-sm p-6 text-center shadow-xl border border-[#FFD700]/20">
+          <section id="contact" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+            <h2 className="text-3xl mb-12 text-center text-white">Contact</h2>
             <div className="max-w-2xl mx-auto">
-              <div className="mb-6 flex flex-col items-center">
-                <div className="flex items-center space-x-4">
-                  <div className="flex items-center space-x-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300">
-                    <FaEnvelope className="w-4 h-4 text-white/90" />
-                    <a href="mailto:rhoda.roby@cedarville.edu" className="text-white hover:text-gray-300 transition-colors">
-                      rhodaannroby@gmail.com
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-8 border border-[#FFD700]/20">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <FaEnvelope className="text-[#FFD700] text-xl" />
+                    <a href="mailto:rhoda.roby@cedarville.edu" className="text-gray-300 hover:text-white transition-colors">
+                      rhoda.roby@cedarville.edu
                     </a>
                   </div>
-                  <div className="flex items-center space-x-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300">
-                    <FaPhone className="w-4 h-4 text-white/90" />
-                    <a href="tel:9379723515" className="text-white hover:text-gray-300 transition-colors">937-972-3515</a>
+                  <div className="flex items-center space-x-4">
+                    <FaPhone className="text-[#FFD700] text-xl" />
+                    <a href="tel:+1234567890" className="text-gray-300 hover:text-white transition-colors">
+                      +1 (234) 567-890
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <FaLinkedin className="text-[#FFD700] text-xl" />
+                    <a 
+                      href="https://www.linkedin.com/in/rhoda-roby/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-white transition-colors"
+                    >
+                      linkedin.com/in/rhoda-roby
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className="border-t border-white/10 pt-6">
-                <h3 className="text-lg mb-4 text-white/90">Social Media</h3>
-                <div className="flex justify-center gap-6">
-                  <a href="https://www.linkedin.com/in/rhoda-roby/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                    <FaLinkedin className="w-6 h-6" />
-                  </a>
-                  <a href="https://www.instagram.com/rhodaannroby/" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-gray-300 transition-colors">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                  </a>
-                  <a href="https://www.facebook.com/rhoda.roby" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-gray-300 transition-colors">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
     </div>
   );

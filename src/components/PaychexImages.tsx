@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function PaychexImages() {
@@ -13,12 +12,10 @@ export default function PaychexImages() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Image
+        <img
           src="/images/Paychex(1).png"
           alt="Paychex Headquarters"
-          width={500}
-          height={300}
-          className={`transition-transform duration-300 object-cover ${isHovered ? 'scale-110' : 'scale-100'}`}
+          className={`transition-transform duration-300 object-cover w-full h-full ${isHovered ? 'scale-110' : 'scale-100'}`}
         />
       </div>
       <div 
@@ -26,12 +23,10 @@ export default function PaychexImages() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Image
+        <img
           src="/images/Paychex(1).png"
           alt="Paychex Office Interior"
-          width={500}
-          height={300}
-          className={`transition-transform duration-300 object-cover ${isHovered ? 'scale-110' : 'scale-100'}`}
+          className={`transition-transform duration-300 object-cover w-full h-full ${isHovered ? 'scale-110' : 'scale-100'}`}
         />
       </div>
     </div>
