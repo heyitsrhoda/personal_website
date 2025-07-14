@@ -14,7 +14,7 @@ export default function PaychexImages() {
         onMouseLeave={() => setIsHovered(false)}
       >
         <Image
-          src="/images/paychex-building.jpg"
+          src="/images/Paychex(1).png"
           alt="Paychex Headquarters"
           width={500}
           height={300}
@@ -27,7 +27,7 @@ export default function PaychexImages() {
         onMouseLeave={() => setIsHovered(false)}
       >
         <Image
-          src="/images/paychex-office.jpg"
+          src="/images/Paychex(1).png"
           alt="Paychex Office Interior"
           width={500}
           height={300}
