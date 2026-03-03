@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { Playfair_Display } from 'next/font/google';
 
 const playfair = Playfair_Display({ subsets: ['latin'] });
@@ -44,7 +44,7 @@ export default function Home() {
                   Contact Me
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/rhoda-roby/"
+                  href="https://www.linkedin.com/in/rhodaroby/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-[#FFD700]/30 hover:border-[#FFD700]/50 text-white px-6 py-2 transition-all duration-300 hover:scale-105"
@@ -68,7 +68,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="relative w-[280px] h-[280px] mx-auto md:mx-0 group">
+            <div className="relative w-[280px] h-[280px] mx-auto md:mx-0 group overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
               <img
                 src="/images/Rhoda.jpg"
                 alt="Rhoda Roby"
@@ -80,7 +80,7 @@ export default function Home() {
 
         <div className="max-w-5xl mx-auto space-y-8">
           <section id="about" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0s', animationFillMode: 'forwards' }}>
-            <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-8 border border-[#FFD700]/20">
+            <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-8 border border-[#FFD700]/20 rounded-lg overflow-hidden">
               <div className="max-w-4xl mx-auto px-4">
                 <h2 className="text-3xl mb-8 text-white text-center">Background</h2>
                 <div className="space-y-12">
@@ -112,16 +112,16 @@ export default function Home() {
             <h2 className="text-3xl mb-12 text-center text-white">Involvement</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Model UN */}
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <div className="flex flex-col">
-                  <div className="relative h-[250px] w-full overflow-hidden mb-4 border-2 border-[#FFD700]/60">
+                  <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                     <img
                       src="/images/UN(1).jpg"
                       alt="Model United Nations"
                       className="object-cover object-center w-full h-full opacity-80"
                     />
                   </div>
-                  <div className="relative h-[250px] w-full overflow-hidden border-2 border-[#FFD700]/60">
+                  <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                     <img
                       src="/images/UN(2).jpeg"
                       alt="Model United Nations"
@@ -138,16 +138,16 @@ export default function Home() {
               </div>
 
               {/* AEI */}
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <div className="flex flex-col">
-                  <div className="relative h-[250px] w-full overflow-hidden mb-4 border-2 border-[#FFD700]/60">
+                  <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                     <img
                       src="/images/AEI(1).JPG"
                       alt="American Enterprise Institute"
                       className="object-cover object-center w-full h-full scale-130"
                     />
                   </div>
-                  <div className="relative h-[250px] w-full overflow-hidden border-2 border-[#FFD700]/60">
+                  <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                     <img
                       src="/images/aei.jpg"
                       alt="American Enterprise Institute"
@@ -164,16 +164,16 @@ export default function Home() {
               </div>
 
               {/* Class Council */}
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <div className="flex flex-col">
-                  <div className="relative h-[250px] w-full overflow-hidden mb-4 border-2 border-[#FFD700]/60">
+                  <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                     <img
                       src="/images/classcouncil(2).jpg"
                       alt="Class Council"
                       className="object-cover object-center w-full h-full"
                     />
                   </div>
-                  <div className="relative h-[250px] w-full overflow-hidden border-2 border-[#FFD700]/60">
+                  <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                     <img
                       src="/images/Classcouncil(3).png"
                       alt="Class Council"
@@ -196,11 +196,81 @@ export default function Home() {
           <section id="experience" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             <h2 className="text-3xl mb-12 text-center text-white">Experience</h2>
             <div className="space-y-8">
+              {/* Pitch Competition - TwinWorld */}
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-1 gap-3 p-4">
+                    <div className="relative w-full h-56 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/pitch-speaking.png"
+                        alt="Rhoda pitching TwinWorld at Cedarville University"
+                        className="object-cover object-center w-full h-full"
+                      />
+                    </div>
+                    <div className="relative w-full h-48 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/pitch-winners.png"
+                        alt="Pitch competition winners at Cedarville University"
+                        className="object-cover object-center w-full h-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-2 text-white">3rd Place — Cedarville University Pitch Competition</h3>
+                    <p className="text-sm text-[#FFD700]/90 mb-4">Spring 2026</p>
+                    <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                      I am a sustainability-driven entrepreneur and innovator focused on solving the global textile waste crisis through circular systems. As the founder of TwinWorld, I am building a two-phase solution that keeps wearable clothing in circulation through brand-to-brand recovery, while transforming non-reusable textiles into modular construction bricks.
+                    </p>
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                      My work sits at the intersection of fashion, infrastructure, and technology, combining circular economy principles with AI-powered systems to create environmental and economic value. Through research, pitching, and hands-on collaboration, I am committed to redesigning how we view waste — not as an end, but as the foundation for something new.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Brand Ambassador - Cedarville Marketing */}
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-2 gap-3 p-4">
+                    {[
+                      { url: 'https://www.instagram.com/reel/DUUmHmujA2l/', img: '/images/brand-reel1.png' },
+                      { url: 'https://www.instagram.com/reel/DRLQ8nMDs3M/', img: '/images/brand-reel2.png' },
+                      { url: 'https://www.instagram.com/reel/DH4n5weoXx8/', img: '/images/brand-reel3.png' },
+                      { url: 'https://www.instagram.com/reel/C56sFLoS1hQ/', img: '/images/brand-reel4.png' },
+                    ].map((reel, i) => (
+                      <a key={i} href={reel.url} target="_blank" rel="noopener noreferrer" aria-label={`Watch viral reel ${i + 1} on Instagram`} className="group relative aspect-square overflow-hidden rounded-lg border-2 border-[#FFD700]/50 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] hover:border-[#FFD700]/70 transition-all">
+                        <div
+                          className="absolute inset-0 bg-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                          style={{
+                            backgroundImage: `url(${reel.img})`,
+                            backgroundPosition: [0, 2, 3].includes(i) ? 'center top' : 'center',
+                          }}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute bottom-2 left-0 right-0 flex items-center justify-center gap-2 text-white/90 group-hover:text-[#FFD700] transition-colors pointer-events-none">
+                          <FaInstagram className="text-lg" />
+                          <span className="text-xs font-medium">Watch Reel</span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                  <div className="p-6 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-4 text-white">Brand Ambassador — Cedarville University Marketing Team</h3>
+                    <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                      Rhoda serves as a Brand Ambassador on Cedarville University&apos;s marketing team — an opportunity that positions her as the face of the university. She creates content that has resonated with millions, including viral videos that reached 3.2 million views on Instagram and 52 million views on YouTube, growing the university&apos;s YouTube channel by 23,000 subscribers.
+                    </p>
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                      Through strategic storytelling and authentic representation, she helps showcase Cedarville&apos;s community, values, and student experience to a global audience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* Paychex - Centered image */}
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="relative h-[250px] flex items-center justify-start p-4">
-                    <div className="relative w-full h-full">
+                    <div className="relative w-full h-full rounded-lg border-2 border-[#FFD700]/50 overflow-hidden">
                       <img
                         src="/images/Paychex(1).png"
                         alt="Paychex"
@@ -217,18 +287,60 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* United Nations */}
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-2 gap-3 p-4">
+                    <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/UN(1).png"
+                        alt="United Nations session"
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                    <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/UN(2).png"
+                        alt="United Nations conference"
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                    <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/UN(3).png"
+                        alt="Delegates at United Nations"
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                    <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/UN(4).png"
+                        alt="United Nations team"
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-4 text-white">United Nations Experience</h3>
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                      Participated in United Nations programs focused on global diplomacy and cross-cultural collaboration. Engaged with delegates on policy discussions, contributed to position papers, and developed practical skills in negotiation, research, and public speaking while representing diverse perspectives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* IT Support */}
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="flex flex-col">
-                    <div className="relative h-[250px] w-full overflow-hidden mb-4">
+                    <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                       <img
                         src="/images/IT(1).png"
                         alt="IT Support"
                         className="object-cover object-center w-full h-full"
                       />
                     </div>
-                    <div className="relative h-[250px] w-full overflow-hidden">
+                    <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
                         src="/images/IT(2).png"
                         alt="IT Support"
@@ -244,6 +356,38 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* Yearbook Administrative Assistant */}
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-1 gap-3 p-4">
+                    <div className="relative w-full h-56 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/yearbook-portrait.png"
+                        alt="Rhoda Roby"
+                        className="object-cover object-[center_35%] w-full h-full"
+                      />
+                    </div>
+                    <div className="relative w-full h-48 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
+                      <img
+                        src="/images/yearbook-team.png"
+                        alt="Yearbook team at Cedarville University"
+                        className="object-cover object-center w-full h-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-4 text-white">Administrative Assistant — Yearbook</h3>
+                    <p className="text-sm text-[#FFD700]/90 mb-4">Cedarville University</p>
+                    <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                      Rhoda serves as administrative assistant for the yearbook at Cedarville University. Her responsibilities include communication across the team, payroll submissions, event planning, scheduling portrait sessions, and managing orders for the yearbook.
+                    </p>
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                      Working with the yearbook team has strengthened her communication skills and ability to collaborate effectively with others. She also handles approval for photo usage and manages the team mailbox, ensuring smooth operations and coordination.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -252,7 +396,7 @@ export default function Home() {
           <section id="skills" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
             <h2 className="text-3xl mb-12 text-center text-white">Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <h3 className="text-xl font-bold mb-4 text-white">Programming Languages</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li>• Python</li>
@@ -262,7 +406,7 @@ export default function Home() {
                   <li>• SQL</li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <h3 className="text-xl font-bold mb-4 text-white">Technologies</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li>• React.js</li>
@@ -272,7 +416,7 @@ export default function Home() {
                   <li>• Docker</li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <h3 className="text-xl font-bold mb-4 text-white">Soft Skills</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li>• Leadership</li>
@@ -290,29 +434,29 @@ export default function Home() {
           <section id="contact" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             <h2 className="text-3xl mb-12 text-center text-white">Contact</h2>
             <div className="max-w-2xl mx-auto">
-              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-8 border border-[#FFD700]/20">
+              <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-8 border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
                     <FaEnvelope className="text-[#FFD700] text-xl" />
-                    <a href="mailto:rhoda.roby@cedarville.edu" className="text-gray-300 hover:text-white transition-colors">
-                      rhoda.roby@cedarville.edu
+                    <a href="mailto:rhodaannroby@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                      rhodaannroby@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center space-x-4">
                     <FaPhone className="text-[#FFD700] text-xl" />
-                    <a href="tel:+1234567890" className="text-gray-300 hover:text-white transition-colors">
-                      +1 (234) 567-890
+                    <a href="tel:9379723515" className="text-gray-300 hover:text-white transition-colors">
+                      937-972-3515
                     </a>
                   </div>
                   <div className="flex items-center space-x-4">
                     <FaLinkedin className="text-[#FFD700] text-xl" />
                     <a 
-                      href="https://www.linkedin.com/in/rhoda-roby/" 
+                      href="https://www.linkedin.com/in/rhodaroby/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-white transition-colors"
                     >
-                      linkedin.com/in/rhoda-roby
+                      linkedin.com/in/rhodaroby
                     </a>
                   </div>
                 </div>
