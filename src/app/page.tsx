@@ -2,6 +2,7 @@ import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { Playfair_Display } from 'next/font/google';
 
 const playfair = Playfair_Display({ subsets: ['latin'] });
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       {/* Background Image using images.jpeg */}
       <div className="fixed inset-0 w-full h-full">
         <img
-          src="/images/images.jpeg"
+          src={`${basePath}/images/images.jpeg`}
           alt="Background"
           className="object-cover object-center w-full h-full"
         />
@@ -70,7 +71,7 @@ export default function Home() {
             </div>
             <div className="relative w-[280px] h-[280px] mx-auto md:mx-0 group overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
               <img
-                src="/images/Rhoda.jpg"
+                src={`${basePath}/images/Rhoda.jpg`}
                 alt="Rhoda Roby"
                 className="object-cover object-[center_10%] transition-transform duration-300 group-hover:scale-105 w-full h-full"
               />
@@ -116,14 +117,14 @@ export default function Home() {
                 <div className="flex flex-col">
                   <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                     <img
-                      src="/images/UN(1).jpg"
+                      src={`${basePath}/images/UN(1).jpg`}
                       alt="Model United Nations"
                       className="object-cover object-center w-full h-full opacity-80"
                     />
                   </div>
                   <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                     <img
-                      src="/images/UN(2).jpeg"
+                      src={`${basePath}/images/UN(2).jpeg`}
                       alt="Model United Nations"
                       className="object-cover object-[center_30%] w-full h-full opacity-80 scale-110"
                     />
@@ -142,14 +143,14 @@ export default function Home() {
                 <div className="flex flex-col">
                   <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                     <img
-                      src="/images/AEI(1).JPG"
+                      src={`${basePath}/images/AEI(1).JPG`}
                       alt="American Enterprise Institute"
                       className="object-cover object-center w-full h-full scale-130"
                     />
                   </div>
                   <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                     <img
-                      src="/images/aei.jpg"
+                      src={`${basePath}/images/aei.jpg`}
                       alt="American Enterprise Institute"
                       className="object-cover object-center w-full h-full"
                     />
@@ -168,14 +169,14 @@ export default function Home() {
                 <div className="flex flex-col">
                   <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                     <img
-                      src="/images/classcouncil(2).jpg"
+                      src={`${basePath}/images/classcouncil(2).jpg`}
                       alt="Class Council"
                       className="object-cover object-center w-full h-full"
                     />
                   </div>
                   <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                     <img
-                      src="/images/Classcouncil(3).png"
+                      src={`${basePath}/images/Classcouncil(3).png`}
                       alt="Class Council"
                       className="object-cover object-[center_30%] w-full h-full scale-110"
                     />
@@ -202,14 +203,14 @@ export default function Home() {
                   <div className="grid grid-cols-1 gap-3 p-4">
                     <div className="relative w-full h-56 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/pitch-speaking.png"
+                        src={`${basePath}/images/pitch-speaking.png`}
                         alt="Rhoda pitching TwinWorld at Cedarville University"
                         className="object-cover object-center w-full h-full"
                       />
                     </div>
                     <div className="relative w-full h-48 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/pitch-winners.png"
+                        src={`${basePath}/images/pitch-winners.png`}
                         alt="Pitch competition winners at Cedarville University"
                         className="object-cover object-center w-full h-full"
                       />
@@ -233,10 +234,10 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="grid grid-cols-2 gap-3 p-4">
                     {[
-                      { url: 'https://www.instagram.com/reel/DUUmHmujA2l/', img: '/images/brand-reel1.png' },
-                      { url: 'https://www.instagram.com/reel/DRLQ8nMDs3M/', img: '/images/brand-reel2.png' },
-                      { url: 'https://www.instagram.com/reel/DH4n5weoXx8/', img: '/images/brand-reel3.png' },
-                      { url: 'https://www.instagram.com/reel/C56sFLoS1hQ/', img: '/images/brand-reel4.png' },
+                      { url: 'https://www.instagram.com/reel/DUUmHmujA2l/', img: `${basePath}/images/brand-reel1.png` },
+                      { url: 'https://www.instagram.com/reel/DRLQ8nMDs3M/', img: `${basePath}/images/brand-reel2.png` },
+                      { url: 'https://www.instagram.com/reel/DH4n5weoXx8/', img: `${basePath}/images/brand-reel3.png` },
+                      { url: 'https://www.instagram.com/reel/C56sFLoS1hQ/', img: `${basePath}/images/brand-reel4.png` },
                     ].map((reel, i) => (
                       <a key={i} href={reel.url} target="_blank" rel="noopener noreferrer" aria-label={`Watch viral reel ${i + 1} on Instagram`} className="group relative aspect-square overflow-hidden rounded-lg border-2 border-[#FFD700]/50 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] hover:border-[#FFD700]/70 transition-all">
                         <div
@@ -272,7 +273,7 @@ export default function Home() {
                   <div className="relative h-[250px] flex items-center justify-start p-4">
                     <div className="relative w-full h-full rounded-lg border-2 border-[#FFD700]/50 overflow-hidden">
                       <img
-                        src="/images/Paychex(1).png"
+                        src={`${basePath}/images/Paychex(1).png`}
                         alt="Paychex"
                         className="object-contain w-full h-full"
                       />
@@ -293,28 +294,28 @@ export default function Home() {
                   <div className="grid grid-cols-2 gap-3 p-4">
                     <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/UN(1).png"
+                        src={`${basePath}/images/UN(1).png`}
                         alt="United Nations session"
                         className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/UN(2).png"
+                        src={`${basePath}/images/UN(2).png`}
                         alt="United Nations conference"
                         className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/UN(3).png"
+                        src={`${basePath}/images/UN(3).png`}
                         alt="Delegates at United Nations"
                         className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative w-full h-40 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/UN(4).png"
+                        src={`${basePath}/images/UN(4).png`}
                         alt="United Nations team"
                         className="object-cover w-full h-full"
                       />
@@ -335,14 +336,14 @@ export default function Home() {
                   <div className="flex flex-col">
                     <div className="relative h-[250px] w-full overflow-hidden mb-4 rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/IT(1).png"
+                        src={`${basePath}/images/IT(1).png`}
                         alt="IT Support"
                         className="object-cover object-center w-full h-full"
                       />
                     </div>
                     <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/IT(2).png"
+                        src={`${basePath}/images/IT(2).png`}
                         alt="IT Support"
                         className="object-cover object-[center_30%] w-full h-full scale-110"
                       />
@@ -363,14 +364,14 @@ export default function Home() {
                   <div className="grid grid-cols-1 gap-3 p-4">
                     <div className="relative w-full h-56 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/yearbook-portrait.png"
+                        src={`${basePath}/images/yearbook-portrait.png`}
                         alt="Rhoda Roby"
                         className="object-cover object-[center_35%] w-full h-full"
                       />
                     </div>
                     <div className="relative w-full h-48 overflow-hidden rounded-lg border-2 border-[#FFD700]/50">
                       <img
-                        src="/images/yearbook-team.png"
+                        src={`${basePath}/images/yearbook-team.png`}
                         alt="Yearbook team at Cedarville University"
                         className="object-cover object-center w-full h-full"
                       />
