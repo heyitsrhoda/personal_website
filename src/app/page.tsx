@@ -1,8 +1,8 @@
 import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { Playfair_Display } from 'next/font/google';
+import { Playfair_Display } from "next/font/google";
 
-const playfair = Playfair_Display({ subsets: ['latin'] });
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const playfair = Playfair_Display({ subsets: ["latin"] });
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Home() {
   return (
@@ -36,8 +36,10 @@ export default function Home() {
               <div className="text-center md:text-left">
                 <h1 className={`${playfair.className} text-4xl font-bold mb-2 text-white italic`}>Rhoda Roby</h1>
               </div>
-              <p className="text-lg text-gray-300 mb-6 text-center md:text-left">Computer Science · Cedarville University</p>
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <p className="text-lg text-gray-300 mb-4 text-center md:text-left">
+                Computer Science · Cedarville University
+              </p>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-6">
                 <a
                   href="#contact"
                   className="border border-[#FFD700]/30 hover:border-[#FFD700]/50 hover:bg-[#FFD700]/20 text-white px-6 py-2 transition-all duration-300 hover:scale-105"
@@ -52,6 +54,28 @@ export default function Home() {
                 >
                   LinkedIn
                 </a>
+              </div>
+
+              {/* Hero metrics */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-md mx-auto md:mx-0 text-center md:text-left">
+                <div className="border border-[#FFD700]/30 bg-black/30 px-4 py-3">
+                  <p className="text-2xl font-semibold text-[#FFD700]">3.2M+</p>
+                  <p className="text-xs uppercase tracking-[0.18em] text-gray-400 mt-1">
+                    Social video views
+                  </p>
+                </div>
+                <div className="border border-[#FFD700]/30 bg-black/30 px-4 py-3">
+                  <p className="text-2xl font-semibold text-[#FFD700]">23K+</p>
+                  <p className="text-xs uppercase tracking-[0.18em] text-gray-400 mt-1">
+                    New subscribers driven
+                  </p>
+                </div>
+                <div className="border border-[#FFD700]/30 bg-black/30 px-4 py-3">
+                  <p className="text-2xl font-semibold text-[#FFD700]">14</p>
+                  <p className="text-xs uppercase tracking-[0.18em] text-gray-400 mt-1">
+                    States explored
+                  </p>
+                </div>
               </div>
               <div className="mt-6 flex items-center space-x-4 text-sm text-gray-300 justify-center md:justify-start">
                 <span className="flex items-center">
@@ -83,7 +107,12 @@ export default function Home() {
           <section id="about" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0s', animationFillMode: 'forwards' }}>
             <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-8 border border-[#FFD700]/20 rounded-lg overflow-hidden">
               <div className="max-w-4xl mx-auto px-4">
-                <h2 className="text-3xl mb-8 text-white text-center">Background</h2>
+                <p className="text-xs tracking-[0.25em] text-[#FFD700]/80 uppercase text-center mb-2">
+                  01 / Background
+                </p>
+                <h2 className="text-3xl mb-8 text-white text-center">
+                  Building at the intersection of tech, impact & story
+                </h2>
                 <div className="space-y-12">
                   <div>
                     <div className="space-y-4 text-gray-300">
@@ -110,7 +139,12 @@ export default function Home() {
           <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
 
           <section id="involvement" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-            <h2 className="text-3xl mb-12 text-center text-white">Involvement</h2>
+            <div className="text-center mb-4">
+              <p className="text-xs tracking-[0.25em] text-[#FFD700]/80 uppercase">
+                02 / Involvement & Leadership
+              </p>
+              <h2 className="text-3xl mt-2 text-white">Involvement</h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Model UN */}
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
@@ -195,7 +229,12 @@ export default function Home() {
           <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
 
           <section id="experience" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-            <h2 className="text-3xl mb-12 text-center text-white">Experience</h2>
+            <div className="text-center mb-4">
+              <p className="text-xs tracking-[0.25em] text-[#FFD700]/80 uppercase">
+                03 / Experience & Ventures
+              </p>
+              <h2 className="text-3xl mt-2 text-white">Experience</h2>
+            </div>
             <div className="space-y-8">
               {/* Pitch Competition - TwinWorld */}
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border border-[#FFD700]/20 rounded-lg overflow-hidden">
@@ -217,8 +256,15 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="p-6 flex flex-col justify-center">
-                    <h3 className="text-xl font-bold mb-2 text-white">3rd Place — Cedarville University Pitch Competition</h3>
-                    <p className="text-sm text-[#FFD700]/90 mb-4">Spring 2026</p>
+                    <h3 className="text-xl font-bold mb-1 text-white">
+                      TwinWorld — Circular Textile Systems
+                    </h3>
+                    <p className="text-sm text-[#FFD700]/90 mb-1">
+                      3rd Place · Cedarville University Pitch Competition · Spring 2026
+                    </p>
+                    <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4">
+                      Sustainability · Circular Economy · AI Systems
+                    </p>
                     <p className="text-lg text-gray-300 leading-relaxed mb-4">
                       I am a sustainability-driven entrepreneur and innovator focused on solving the global textile waste crisis through circular systems. As the founder of TwinWorld, I am building a two-phase solution that keeps wearable clothing in circulation through brand-to-brand recovery, while transforming non-reusable textiles into modular construction bricks.
                     </p>
@@ -394,46 +440,79 @@ export default function Home() {
 
           <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
 
-          <section id="skills" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
-            <h2 className="text-3xl mb-12 text-center text-white">Skills</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <section
+            id="skills"
+            className="mb-16 opacity-0 animate-fadeIn"
+            style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
+          >
+            <div className="text-center mb-4">
+              <p className="text-xs tracking-[0.25em] text-[#FFD700]/80 uppercase">
+                04 / Technical Arsenal
+              </p>
+              <h2 className="text-3xl mt-2 text-white">Skills</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20 rounded-lg overflow-hidden">
-                <h3 className="text-xl font-bold mb-4 text-white">Programming Languages</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Python</li>
-                  <li>• Java</li>
-                  <li>• JavaScript</li>
-                  <li>• HTML/CSS</li>
-                  <li>• SQL</li>
-                </ul>
+                <h3 className="text-xl font-bold mb-4 text-white">Languages</h3>
+                <div className="flex flex-wrap gap-2">
+                  {["Python", "Java", "JavaScript", "TypeScript", "SQL"].map((item) => (
+                    <span
+                      key={item}
+                      className="px-3 py-1 text-sm rounded-full border border-[#FFD700]/40 bg-black/40 text-gray-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20 rounded-lg overflow-hidden">
-                <h3 className="text-xl font-bold mb-4 text-white">Technologies</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• React.js</li>
-                  <li>• Next.js</li>
-                  <li>• Node.js</li>
-                  <li>• Git</li>
-                  <li>• Docker</li>
-                </ul>
+                <h3 className="text-xl font-bold mb-4 text-white">Tech & Tools</h3>
+                <div className="flex flex-wrap gap-2">
+                  {["React", "Next.js", "Node.js", "Git", "Docker", "REST APIs"].map((item) => (
+                    <span
+                      key={item}
+                      className="px-3 py-1 text-sm rounded-full border border-[#FFD700]/40 bg-black/40 text-gray-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-6 border border-[#FFD700]/20 rounded-lg overflow-hidden">
-                <h3 className="text-xl font-bold mb-4 text-white">Soft Skills</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Leadership</li>
-                  <li>• Public Speaking</li>
-                  <li>• Problem Solving</li>
-                  <li>• Team Collaboration</li>
-                  <li>• Cross-cultural Communication</li>
-                </ul>
+                <h3 className="text-xl font-bold mb-4 text-white">Human Skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Leadership",
+                    "Public Speaking",
+                    "Problem Solving",
+                    "Team Collaboration",
+                    "Cross-cultural Communication",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="px-3 py-1 text-sm rounded-full border border-[#FFD700]/40 bg-black/40 text-gray-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </section>
 
           <div className="border-t-2 border-[#000000]/80 my-12 w-full max-w-4xl mx-auto shadow-sm"></div>
 
-          <section id="contact" className="mb-16 opacity-0 animate-fadeIn" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-            <h2 className="text-3xl mb-12 text-center text-white">Contact</h2>
+          <section
+            id="contact"
+            className="mb-16 opacity-0 animate-fadeIn"
+            style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+          >
+            <div className="text-center mb-4">
+              <p className="text-xs tracking-[0.25em] text-[#FFD700]/80 uppercase">
+                05 / Connect
+              </p>
+              <h2 className="text-3xl mt-2 text-center text-white">Contact</h2>
+            </div>
             <div className="max-w-2xl mx-auto">
               <div className="bg-gradient-to-b from-[#222222]/70 to-[#1a1a1a]/70 p-8 border border-[#FFD700]/20 rounded-lg overflow-hidden">
                 <div className="space-y-6">
